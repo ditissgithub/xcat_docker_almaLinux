@@ -55,3 +55,7 @@ ENV PATH="$XCATROOT/bin:$XCATROOT/sbin:$XCATROOT/share/xcat/tools:$PATH" MANPATH
 VOLUME [ "/xcatdata", "/var/log/xcat" ]
 
 CMD [ "/entrypoint.sh" ]
+
+ADD xcat_customize_alma.sh /xcat_customize_alma.sh
+RUN chmod +x /xcat_customize_alma.sh
+CMD [ "/xcat_customize_alma.sh" ]
