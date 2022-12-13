@@ -26,19 +26,19 @@ sed -i 's/1624205633.869423/1652294731.711601' /opt/xcat/lib/perl/xCAT/data/disc
 # add some files related to xcat
 
 mkdir -p xCAT-server/share/xcat/install/alma/
-mv compute.alma8.pkglist xCAT-server/share/xcat/install/alma/compute.alma8.pkglist
-mv compute.alma8.tmpl xCAT-server/share/xcat/install/alma/compute.alma8.tmpl
-mv service.alma8.pkglist xCAT-server/share/xcat/install/alma/service.alma8.pkglist
-mv service.alma8.tmpl xCAT-server/share/xcat/install/alma/service.alma8.tmpl
-mv service.alma8.x86_64.otherpkgs.pkglist xCAT-server/share/xcat/install/alma/service.alma8.x86_64.otherpkgs.pkglist
+mv compute.alma8.pkglist /opt/xcat/share/xcat/install/alma/compute.alma8.pkglist
+mv compute.alma8.tmpl /opt/xcat/share/xcat/install/alma/compute.alma8.tmpl
+mv service.alma8.pkglist /opt/xcat/share/xcat/install/alma/service.alma8.pkglist
+mv service.alma8.tmpl /opt/xcat/share/xcat/install/alma/service.alma8.tmpl
+mv service.alma8.x86_64.otherpkgs.pkglist /opt/xcat/share/xcat/install/alma/service.alma8.x86_64.otherpkgs.pkglist
 
 
 mkdir -p xCAT-server/share/xcat/netboot/alma/
-mv compute.alma8.x86_64.exlist xCAT-server/share/xcat/netboot/alma/compute.alma8.x86_64.exlist
-mv compute.alma8.x86_64.pkglist xCAT-server/share/xcat/netboot/alma/compute.alma8.x86_64.pkglist
-mv compute.alma8.x86_64.postinstall  xCAT-server/share/xcat/netboot/alma/compute.alma8.x86_64.postinstall
+mv compute.alma8.x86_64.exlist /opt/xcat/share/xcat/netboot/alma/compute.alma8.x86_64.exlist
+mv compute.alma8.x86_64.pkglist /opt/xcat/share/xcat/netboot/alma/compute.alma8.x86_64.pkglist
+mv compute.alma8.x86_64.postinstall  /opt/xcat/share/xcat/netboot/alma/compute.alma8.x86_64.postinstall
 
-mv dracut_047 xCAT-server/share/xcat/netboot/alma/dracut_047
-touch xCAT-server/share/xcat/netboot/alma/genimage
-mv geninitrd xCAT-server/share/xcat/netboot/alma/geninitrd
+mv dracut_047 /opt/xcat/share/xcat/netboot/alma/dracut_047
+touch /opt/xcat/share/xcat/netboot/alma/genimage
+mv geninitrd /opt/xcat/share/xcat/netboot/alma/geninitrd
 
