@@ -45,7 +45,25 @@ RUN systemctl enable httpd && \
     systemctl enable sshd && \
     systemctl enable dhcpd && \
     systemctl enable rsyslog && \
-    systemctl enable xcatd
+    systemctl enable xcatdADD compute.alma8.pkglist .
+
+ADD compute.alma8.tmpl .
+ADD compute.alma8.x86_64.exlist .
+ADD compute.alma8.x86_64.pkglist .
+ADD compute.alma8.x86_64.postinstall .
+ADD dracut_047 .
+ADD geninitrd .
+ADD service.alma8.pkglist .
+ADD service.alma8.tmpl .
+ADD service.alma8.x86_64.otherpkgs.pkglist .
+ADD xcat_customize_alma.sh .
+
+RUN chmod +x xcat_customize_alma.sh
+
+RUN ./xcat_customize_alma.sh
+
+    
+
 
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
