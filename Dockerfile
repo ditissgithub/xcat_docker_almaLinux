@@ -29,6 +29,7 @@ RUN yum install -y -q wget which &&\
        openssh-server \
        rsyslog \
        createrepo \
+       iproute \
        chrony \
        man && \
     yum clean all
