@@ -46,8 +46,9 @@ RUN systemctl enable httpd && \
     systemctl enable sshd && \
     systemctl enable dhcpd && \
     systemctl enable rsyslog && \
-    systemctl enable xcatdADD compute.alma8.pkglist .
-
+    systemctl enable xcatd
+    
+ADD compute.alma8.pkglist .
 ADD compute.alma8.tmpl .
 ADD compute.alma8.x86_64.exlist .
 ADD compute.alma8.x86_64.pkglist .
