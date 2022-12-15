@@ -39,6 +39,8 @@ mv compute.alma8.x86_64.pkglist /opt/xcat/share/xcat/netboot/alma/compute.alma8.
 mv compute.alma8.x86_64.postinstall  /opt/xcat/share/xcat/netboot/alma/compute.alma8.x86_64.postinstall
 
 mv dracut_047 /opt/xcat/share/xcat/netboot/alma/dracut_047
-touch /opt/xcat/share/xcat/netboot/alma/genimage
 mv geninitrd /opt/xcat/share/xcat/netboot/alma/geninitrd
+touch /opt/xcat/share/xcat/netboot/alma/genimage
+#allow the execute permission for genimage file
+chmod +x /opt/xcat/share/xcat/netboot/alma/genimage
 
