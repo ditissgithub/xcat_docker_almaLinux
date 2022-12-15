@@ -1,4 +1,5 @@
 #!/bin/bash
+dnf install iproute -y
 dnf install initscripts -y
 dnf install chkconfig -y
 systemctl restart httpd
