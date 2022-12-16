@@ -2,7 +2,7 @@
 dnf install iproute -y
 dnf install initscripts -y
 dnf install chkconfig -y
-systemctl restart xcatd 
+systemctl start xcatd 
 sed -i 's/rocky/alma/g' /opt/xcat/lib/perl/xCAT_plugin/geninitrd.pm
 sed -i 's/rocky/alma/g' /opt/xcat/lib/perl/xCAT_plugin/imgcapture.pm
 sed -i 's/rocky/alma/g' /opt/xcat/lib/perl/xCAT_plugin/imgport.pm
