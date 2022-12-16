@@ -8,9 +8,6 @@ ARG xcat_version=latest
 ARG xcat_reporoot=https://xcat.org/files/xcat/repos/yum
 ARG xcat_baseos=rh8
 
-RUN systemctl stop firewalld
-RUN setenforce 0
-
 RUN (cd /lib/systemd/system/sysinit.target.wants/; \
      for i in *; do [ $i == systemd-tmpfiles-setup.service ] || rm -f $i; done); \
         rm -f /lib/systemd/system/multi-user.target.wants/* && \
