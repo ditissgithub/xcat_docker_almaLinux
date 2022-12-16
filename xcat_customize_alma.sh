@@ -2,11 +2,7 @@
 dnf install iproute -y
 dnf install initscripts -y
 dnf install chkconfig -y
-systemctl restart httpd
-systemctl restart tftp
 systemctl restart xcatd 
-systemctl enable xcatd
-systemctl enable tftp
 sed -i 's/rocky/alma/g' /opt/xcat/lib/perl/xCAT_plugin/geninitrd.pm
 sed -i 's/rocky/alma/g' /opt/xcat/lib/perl/xCAT_plugin/imgcapture.pm
 sed -i 's/rocky/alma/g' /opt/xcat/lib/perl/xCAT_plugin/imgport.pm
