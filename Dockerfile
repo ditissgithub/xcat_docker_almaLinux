@@ -55,7 +55,6 @@ ADD compute.alma8.tmpl .
 ADD compute.alma8.x86_64.exlist .
 ADD compute.alma8.x86_64.pkglist .
 ADD compute.alma8.x86_64.postinstall .
-ADD dracut_047 .
 ADD geninitrd .
 ADD service.alma8.pkglist .
 ADD service.alma8.tmpl .
