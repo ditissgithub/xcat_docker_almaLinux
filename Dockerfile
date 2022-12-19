@@ -31,6 +31,8 @@ RUN yum install -y -q wget which &&\
        createrepo \
        iproute \
        chrony \
+       network-scripts \
+       dhcp-client \
        man && \
     yum clean all
 
